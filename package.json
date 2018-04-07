@@ -14,6 +14,7 @@
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^4.0.8",
     "react-scripts": "1.0.17",
+    "react-test-renderer": "^16.3.1",
     "recompose": "^0.26.0",
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
@@ -28,13 +29,20 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
-    "test": "jest",
+    "test": "node node_modules/.bin/jest",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "devDependencies": {
     "axios": "^0.17.1",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.0.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "flow-bin": "^0.64.0",
-    "jest": "^22.1.4",
+    "jest": "22.0.2",
     "json-server": "^0.12.1",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
