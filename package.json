@@ -1,0 +1,46 @@
+{
+  "name": "omajimedesign",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://kenmori.github.io",
+  "dependencies": {
+    "@storybook/react": "^3.3.10",
+    "history": "^4.7.2",
+    "mirror-creator": "^1.1.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.0",
+    "react-responsive": "^4.0.3",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "1.0.17",
+    "recompose": "^0.26.0",
+    "redux-actions": "^2.2.1",
+    "redux-logger": "^3.0.6"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "flow": "flow",
+    "start-js": "react-scripts start",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "axios": "^0.17.1",
+    "flow-bin": "^0.64.0",
+    "jest": "^22.1.4",
+    "node-sass-chokidar": "^1.2.2",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.3.1",
+    "react-alert": "^2.4.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-form": "^7.1.2",
+    "redux-saga": "^0.16.0"
+  }
+}
