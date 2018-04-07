@@ -9,7 +9,7 @@ export class Home extends Component {
             <div>
             <MediaQuery maxDeviceWidth={460}>
             </MediaQuery>
-            <section className='firstView'>
+            <section>
                 <h1>starter react-redux</h1>
             </section>
             </div>
