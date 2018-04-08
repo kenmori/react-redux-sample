@@ -1,11 +1,21 @@
 //@flow
-import React, { Component } from 'react';
+import React, {Fragment, Component } from 'react';
 
-export class About extends Component <{}> {
+type Props = {
+    foo: string,
+    id: number
+}
+
+export const Foo = ({foo, id} : Props) => {
+    return <div className={foo} id={id} />;
+}
+
+class About extends Component <{}> {
     render(){
         return (
-            <div>
-            </div>
+            <Foo foo="foo" id={9} />
         )
     }
 }
+
+export default About;

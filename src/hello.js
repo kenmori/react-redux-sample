@@ -1,4 +1,11 @@
 //@flow
-export const  hello = (name: string) : string =>  'Hello '+ name + '!!'
+export const  hello = (name: string) : string => {
+    if(name){
+        return 'Hello '+ name + '!!'
+    } else {
+        return  "Hello";
+    }
+}
+
 
 
