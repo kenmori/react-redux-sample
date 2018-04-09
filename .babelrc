@@ -1,9 +1,10 @@
 {
-  "presets": ["babel-preset-react-app", "es2015", "flow" ],
+  "presets": ["babel-preset-react-app", "es2015", "flowtype" ],
     "env": {
     "test": {
-      "plugins": ["transform-runtime"],
+      "plugins": ["transform-flow-strip-types","transform-runtime", "flowtype"],
       "sourceMaps": "both"
     }
   }
 }
+
