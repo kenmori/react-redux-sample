@@ -1,6 +1,23 @@
 ## react redux starterkit
 
-react-create-app x react x redux x redux-saga x flow
+create-react-appから始めたいけど
+reduxやrouter、scss、flow, prettierなどの設定が面倒な方へ
+それらの設定済みから始められる
+starterkitです
+
+・react-create-app
+・react
+・react-router
+・redux
+・react-helmet
+・redux-form
+・redux-saga
+・flow
+・prettier
+・logger
+・composeWithDevTools
+・Enzyme
+・jest
 
 ````
 yarn install
