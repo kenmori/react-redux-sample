@@ -1,8 +1,7 @@
 {
-  "name": "omajimedesign",
+  "name": "react-redux-router-starterkit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://kenmori.github.io",
   "dependencies": {
     "@storybook/react": "^3.3.10",
     "history": "^4.7.2",
@@ -10,12 +9,16 @@
     "prop-types": "^15.6.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.0",
+    "react-redux": "^5.0.6",
     "react-responsive": "^4.0.3",
+    "react-router-dom": "^4.2.2",
     "react-router-redux": "^4.0.8",
     "react-scripts": "1.0.17",
     "recompose": "^0.26.0",
+    "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
@@ -32,15 +35,9 @@
     "axios": "^0.17.1",
     "flow-bin": "^0.64.0",
     "jest": "^22.1.4",
+    "json-server": "^0.12.1",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
-    "react": "^16.3.1",
-    "react-alert": "^2.4.0",
-    "react-redux": "^5.0.6",
-    "react-router-dom": "^4.2.2",
-    "redux": "^3.7.2",
-    "redux-devtools-extension": "^2.13.2",
-    "redux-form": "^7.1.2",
-    "redux-saga": "^0.16.0"
+    "redux-devtools-extension": "^2.13.2"
   }
 }
