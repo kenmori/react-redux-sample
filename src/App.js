@@ -1,6 +1,7 @@
 import React  from 'react';
 import { Home } from './container/Home';
 import { About } from './container/About';
+import Topic from './container/Topic';
 import './scss/utils/helper.css';
 import { Provider } from 'react-redux';
 import { BrowserRouter,   Route } from 'react-router-dom';
@@ -32,8 +33,9 @@ const App = () => (
     <Provider store={store}>
     <BrowserRouter>
         <div>
-         <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={About} />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/about' component={About} />
+        <Route exact path='/topic' component={Topic} />
         </div>
     </BrowserRouter>
     </Provider>
