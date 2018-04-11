@@ -45,7 +45,8 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "node node_modules/.bin/jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "json-server": "node server.js"
   },
   "jest": {
     "testEnvironment": "enzyme",
