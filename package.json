@@ -35,7 +35,10 @@
     "eject": "react-scripts eject"
   },
   "jest": {
-    "testEnvironment": "node",
+    "testEnvironment": "enzyme",
+    "testEnvironmentOptions": {
+      "enzymeAdapter": "react16"
+    },
     "moduleNameMapper": {
       "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
     }
@@ -51,6 +54,7 @@
     "flow-bin": "^0.64.0",
     "jest": "22.0.2",
     "jest-css-modules": "^1.1.0",
+    "jest-environment-enzyme": "^6.0.0",
     "json-server": "^0.12.1",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
