@@ -5,8 +5,11 @@ reduxやrouter、scss、flow, prettierなどの設定が面倒な方へ
 それらの設定済みから始められる
 starterkitです
 
+node 8.11.1
+npm 5.6.0
+
+
 ・react-create-app
-・react
 ・react-router
 ・redux
 ・react-helmet
