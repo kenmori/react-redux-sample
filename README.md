@@ -18,6 +18,7 @@ starterkitです
 ・composeWithDevTools
 ・Enzyme
 ・jest
+・storybook
 
 ````
 yarn install
