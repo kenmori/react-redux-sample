@@ -1,7 +1,7 @@
 //@flow
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
-import { increment, decrement, INCREMENT, DECREMENT } from '../actions/Topic';
+import { increment, decrement } from '../actions/Topic';
 import type { MapStateToProps } from 'react-redux';
 
 const Topic = ({ count, increment, decrement }) => (
