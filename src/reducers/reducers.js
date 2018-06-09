@@ -1,10 +1,9 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import { topic } from './topic';
-
+import { counter } from './counter';
 const reducers = combineReducers({
   routing: routerReducer,
-  topic: topic
+  counter: counter
 });
 
 export default reducers;

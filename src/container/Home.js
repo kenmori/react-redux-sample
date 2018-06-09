@@ -1,21 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../scss/base/reset.css';
-import '../scss/pages/home/Home.css';
-import MediaQuery from 'react-responsive';
-import {connect} from 'react-redux';
-export class Home extends Component {
-    render(){
-        return (
-            <div>
-            <MediaQuery maxDeviceWidth={460}>
-            </MediaQuery>
-            <section>
-                <h1>starter react-redux</h1>
-            </section>
-            </div>
-        )
-    }
-}
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
-export default connect({
-})(Home);
+let Home = () => (
+  <section>
+    <h1>WellCome!!</h1>
+    <Link to="/Counter" style={{ color: 'blue' }}>
+      to Count
+    </Link>
+  </section>
+);
+
+export default connect()(Home);

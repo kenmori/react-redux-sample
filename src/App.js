@@ -1,7 +1,7 @@
 import React from 'react';
-import { Home } from './container/Home';
+import Home from './container/Home';
 import About from './container/About';
-import Topic from './container/Topic';
+import CounterContainer from './container/Counter';
 import FormSample from './container/Form';
 import './scss/utils/helper.css';
 import { Provider } from 'react-redux';
@@ -31,8 +31,9 @@ const App = () => (
     <BrowserRouter>
       <div>
         <Route exact path="/" component={Home} />
+        <Route exact path="/counter" component={CounterContainer} />
         <Route exact path="/about" component={About} />
-        <Route exact path="/topic" component={Topic} />
+        <Route exact path="/about" component={About} />
         <Route exact path="/form" component={FormSample} />
       </div>
     </BrowserRouter>
