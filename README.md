@@ -8,9 +8,22 @@ reduxやrouter、scss、flow, prettierなどの設定が面倒な方へ
 
 starterkitです
 
-・適当なCounterアプリを実装してredux、routerが動くことを保証しています(reduxにまだ親しみがない方のために)
-![counter](http://kenjimorita.jp/wp-content/uploads/2018/06/redu.gif)
+※ducksでは構成されていません
 
+### サイト内
+
+```
+/
+ - /Counter (アプリを実装してredux、routerが動くことを保証しています(reduxにまだ親しみがない方のために)
+ - /Example (実際にsagaを使用してjson-server内のpostsへgetリクエストしたものを表示しています。containerではrecomposeやreselectを使って記述されています)
+```
+
+
+### 補足
+
+・counter
+
+![counter](http://kenjimorita.jp/wp-content/uploads/2018/06/redu.gif)
 ・sagaは後述する[json-server](https://github.com/typicode/json-server)を起動してリクエストできるようにしてあります
 
 ・create-react-appをejectしています
