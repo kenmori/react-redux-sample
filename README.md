@@ -1,4 +1,4 @@
-## react redux starterkit
+## react redux redux-saga react-router flow example starterkit
 
 create-react-appから始めたいけど
 
