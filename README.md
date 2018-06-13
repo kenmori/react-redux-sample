@@ -9,8 +9,9 @@ reduxやrouter、scss、flow, prettierなどの設定が面倒な方へ
 starterkitです
 
 ・適当なCounterアプリを実装してredux、routerが動くことを保証しています(reduxにまだ親しみがない方のために)
-・sagaは後述する[json-server](https://github.com/typicode/json-server)を起動してリクエストできるようにしてあります
 ![counter](http://kenjimorita.jp/wp-content/uploads/2018/06/redu.gif)
+
+・sagaは後述する[json-server](https://github.com/typicode/json-server)を起動してリクエストできるようにしてあります
 ・create-react-appをejectしています
 
 
