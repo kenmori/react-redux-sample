@@ -24,6 +24,7 @@ starterkitです
 ・counter
 
 ![counter](http://kenjimorita.jp/wp-content/uploads/2018/06/redu.gif)
+
 ・sagaは後述する[json-server](https://github.com/typicode/json-server)を起動してリクエストできるようにしてあります
 
 ・create-react-appをejectしています
