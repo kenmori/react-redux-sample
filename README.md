@@ -1,4 +1,4 @@
-## react redux redux-saga react-router flow example starterkit
+## react redux redux-saga react-router flow pretter example starterkit
 
 create-react-appから始めたいけど
 
@@ -23,7 +23,7 @@ node 8.11.2
 npm 5.6.0
 ```
 
-### add library
+### already add library
 
 ```
 - react-create-app
@@ -58,8 +58,17 @@ http://vanseodesign.com/css/sass-directory-structures/
 ### getting start
 
 ```
+- yarn install
 - json-server db.json
 - yarn start
+
+flow
+
+- yarn flow
+
+test
+
+- yarn test
 
 build
 -  npm run build
