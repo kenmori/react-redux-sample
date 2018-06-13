@@ -9,6 +9,7 @@
     "history": "^4.7.2",
     "mirror-creator": "^1.1.0",
     "prop-types": "^15.6.0",
+    "ramda": "^0.25.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-modal": "^3.3.2",
@@ -23,7 +24,8 @@
     "redux-actions": "^2.4.0",
     "redux-form": "^7.3.0",
     "redux-logger": "^3.0.6",
-    "redux-saga": "^0.16.0"
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
