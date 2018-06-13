@@ -8,11 +8,21 @@ reduxやrouter、scss、flow, prettierなどの設定が面倒な方へ
 
 starterkitです
 
-※create-react-appをejectしています
+・適当なCounterアプリを実装してredux、routerが動くことを保証しています(reduxにまだ親しみがない方のために)
+・sagaは後述する[json-server](https://github.com/typicode/json-server)を起動してリクエストできるようにしてあります
+![counter](http://kenjimorita.jp/wp-content/uploads/2018/06/redu.gif)
+・create-react-appをejectしています
 
-````
+
+### require
+
+```
 node 8.11.2
 npm 5.6.0
+```
+
+### add library
+
 ```
 - react-create-app
 - react-router
@@ -28,28 +38,24 @@ npm 5.6.0
 - Enzyme
 - jest
 - storybook
+```
 
+### モックサーバー
 
-モックサーバー立ち上げ
-
-````
-yarn install
+```
 npm i -g json-server
 ```
 
-scss
-
-scssのフォルダ構成はこちら
+### scss
 
 ```
 sass-directory-structures
 http://vanseodesign.com/css/sass-directory-structures/
 ```
 
-getting start
+### getting start
 
 ```
-run local json-server
 - json-server db.json
 - yarn start
 
