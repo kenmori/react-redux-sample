@@ -2,7 +2,22 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
+      "title": "JavaScript",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "TypeScript",
+      "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "React",
+      "author": "typicode"
+    },
+    {
+      "id": 4,
+      "title": "Angular",
       "author": "typicode"
     }
   ]
