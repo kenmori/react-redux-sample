@@ -10,6 +10,7 @@ export default {
   }
 };
 
+//https://github.com/redux-saga/redux-saga/issues/561
 function statusHelper(response) {
   if (response.status >= 200 && response.status < 300) {
     return Promise.resolve(response);
