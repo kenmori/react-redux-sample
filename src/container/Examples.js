@@ -8,15 +8,47 @@ import { selectorData, selectorError } from '../selector/examples';
 import styled from 'styled-components';
 
 const Error = styled.div`
-  color: #ef6b6b;
+  color: palevioletred;
 `;
+const List = styled.ul`
+  padding: 20px 30px;
+`;
+
+const Button = styled.button.attrs({
+  //ここでpropsを指定もできる(呼び出し時ではなく)
+  type: 'password',
+  margin: props => props.size || '1em',
+  padding: props => props.size || '1em'
+  //共通部分はこの下に書く
+})`
+  font-size: 1em;
+  border-radius: 3px;
+  margin: ${props => props.margin};
+  padding: ${props => props.padding};
+`;
+
+const StyledLink = Button.withComponent('a');
+const ButtonExtend = Button.extend`
+  border-color: green;
+`;
+Button.defaultProps = {
+  theme: {
+    main: '#0088ee'
+  }
+};
+
 export let ExamplesForTest = ({ data, error }: { data: Object }) => (
   <section>
     <h1>Example</h1>
     <h2>pull list from db</h2>
     <br />
     <br />
-    <ul>{data && data.map(e => <li key={e.id}>{e.title}</li>)}</ul>
+    <Button>ボタン</Button>
+    <Button size="2em">ボタン</Button>
+    <StyledLink>リンク</StyledLink>
+    <Button theme={{ main: 'red' }} />
+    <ButtonExtend />
+    <List>{data && data.map(e => <li key={e.id}>{e.title}</li>)}</List>
     <ul>
       {error.errorMessage && (
         <Error>

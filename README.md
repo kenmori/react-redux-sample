@@ -37,6 +37,17 @@ yarn install
 npm i -g json-server
 ```
 
+storybook/cli install
+
+```
+npm i -g @storybook/cli`
+getsstorybook
+
+npm run storybook
+visit http://localhost:9009/
+
+```
+
 scss
 
 scssのフォルダ構成はこちら
