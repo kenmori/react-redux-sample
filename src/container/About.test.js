@@ -1,9 +1,7 @@
 //@flow
-import Adapter from 'enzyme-adapter-react-16';
 import React, { Component } from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import About from './About';
-Enzyme.configure({ adapter: new Adapter() });
 
 describe('<About />', () => {
   it('should render three <div>', () => {

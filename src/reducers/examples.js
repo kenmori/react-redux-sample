@@ -3,16 +3,23 @@ import { SUCCESS, FAILUER } from '../actions/examples';
 
 const initialState = {
   data: [],
-  error: {}
+  error: {
+    errorMessage: ''
+  }
 };
 export const examples = handleActions(
   {
-    [SUCCESS]: (state, action) =>
-      console.log('---------', action) || {
+    [SUCCESS]: (state, action) => {
+      return {
         ...state,
-        data: action.payload
-      },
-    [FAILUER]: (state, action) => ({ ...state, error: action.payload })
+        data: action.payload,
+        error: { errorMessage: '' }
+      };
+    },
+    [FAILUER]: (state, action) => ({
+      ...state,
+      error: { errorMessage: action.payload.error.errorMessage }
+    })
   },
   initialState
 );
